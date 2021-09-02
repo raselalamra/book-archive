@@ -5,14 +5,14 @@
     const searchField = document.getElementById('search-field')
     const searchText = searchField.value;
 
-        ////---emty string search result---/////
+        ////<---emty string error handling--->/////
         searchText.textContent ='';
         errorDiv.textContent = '';
     if (searchText === "") {
         errorDiv.innerHTML = "<h5 class='text-center p-3 text-danger'><b>Search field cannot be find</b></h5>"
         return;
       }
-     // clear data
+     //---clear data---////
      searchField.value = '';
 
      const url = `https://openlibrary.org/search.json?q=${searchText}`
@@ -20,7 +20,7 @@
      .then(res => res.json())
      .then (data => displaySearchResult(data))
 }
-
+    //<---eorror handling--->//
 const resultNumber = num =>{
     totalResult.textContent = '';
     if( num === 0){
@@ -33,7 +33,6 @@ const resultNumber = num =>{
         `;
       }
 }
-
     //<--- search your result show ---->//
 
     const displaySearchResult = data => {
