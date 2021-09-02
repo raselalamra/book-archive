@@ -52,7 +52,7 @@ const resultNumber = num =>{
             <div class="card-body">
                  <h5 class="card-title">Book Name: ${book.title}</h5>
                  <h6>Author Name: ${book.author_name}</h6>
-                 <p>publisher: ${book.publisher}</p>
+                 <p>publisher: ${book.publisher[0]}</p>
                  <p>First Publish: ${book.first_publish_year}</p>
             </div>
        </div>
