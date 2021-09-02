@@ -12,12 +12,13 @@
     <h2 class="text-center text-success">Book Archive</h2>
 
         <!-- book search area -->
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 w-50 mx-auto">
             <input id="search-field" type="text" class="form-control" placeholder="search for your favourite book..." aria-label="Recipient's username" aria-describedby="button-addon2">
             <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="search-button">search</button>
           </div>
-
+          <div class="w-50 mx-auto ps-2" id="totalResult"></div>
           <!-- book search result -->
+
           <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 w-50 mx-auto">
           </div>
 
